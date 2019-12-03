@@ -28,6 +28,10 @@ border-left:3px solid red;
                to { color: white; left: 0px; top: 0px; }
            }
 
+           @keyframes menu2 {
+               from { color: black; height:50px; }
+               to { color: white; height:115px; }
+           }
 
 .left
 {
@@ -50,7 +54,7 @@ background-color:white;
 top:0px;
 position: fixed;
 z-index:5;
-animation:menu 0.5s;
+animation:menu 1s;
 }
 
 .row
@@ -70,6 +74,8 @@ margin:150px 50px;
 left: 20px;
 position: fixed;
 border-radius:10px 10px;
+overflow:hidden;
+animation:menu2 1s;
 }
 
 .team

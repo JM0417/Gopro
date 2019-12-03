@@ -38,7 +38,7 @@ height: 100px auto;
 background-color:white;
 top:0px;
 position: fixed;
-animation:menu 0.5s;
+animation:menu 1s;
 z-index:6;
 }
 
@@ -59,6 +59,9 @@ margin:150px 50px;
 left: 20px;
 position: fixed;
 border-radius:10px 10px;
+animation:menu2 1s;
+height:230px;
+overflow:hidden;
 }
 
 .space2
@@ -91,6 +94,11 @@ background-color:#ccc;
 border-radius: 10px 10px;
 overflow: hidden;
 opacity:0.9;
+}
+
+.menu2 a:hover
+{
+font-size:22px;
 }
 
 .hiv
@@ -199,6 +207,11 @@ background-color:white;
                from { color: black; left: 0px; top:-150px; }
                to { color: white; left: 0px; top: 0px; }
            }
+           @keyframes menu2 {
+               from { color: black; height:50px; }
+               to { color: white; height:230px; }
+           }
+
 
 </style>
 </head>

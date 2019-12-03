@@ -51,6 +51,11 @@ animation:menu 0.5s;
                from { color: black; left: 0px; top:-150px; }
                to { color: white; left: 0px; top: 0px; }
            }
+           @keyframes menu2 {
+               from { color: black; height:50px; }
+               to { color: white; height:135px; }
+           }
+
 .row
 {
 padding:0 30px;
@@ -59,6 +64,7 @@ padding:0 30px;
 .menu2
 {
 width:150px;
+height:135px;
 border :4px solid black;
 background-color: white;
 text-align:center;
@@ -68,6 +74,8 @@ margin:150px 50px;
 left: 20px;
 position: fixed;
 border-radius:10px 10px;
+animation:menu2 1s;
+overflow:hidden;
 }
 
 .menu2 > a
@@ -75,10 +83,15 @@ border-radius:10px 10px;
 text-decoration:none;
 }
 
+.menu2 a:hover
+{
+font-size:22px;
+}
+
 
 .team
 {
-margin: 0 0 0 300px;
+margin: 0 0 0 250px;
 width: 900px;
 height:600px;
 background-color:#ccc;
